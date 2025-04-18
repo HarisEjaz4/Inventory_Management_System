@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">{{ isEditMode ? 'Edit' : 'Add' }} Product</mat-toolbar>
+
+<div class="container mt-4">
+  <mat-card>
+    <form (ngSubmit)="saveProduct()">
+
+      <mat-form-field appearance="fill" class="w-100 mb-3">
+        <mat-label>Product Name</mat-label>
+        <input matInput [(ngModel)]="product.name" name="name" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="w-100 mb-3">
+        <mat-label>Description</mat-label>
+        <input matInput [(ngModel)]="product.description" name="description">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="w-100 mb-3">
+        <mat-label>Quantity</mat-label>
+        <input type="number" matInput [(ngModel)]="product.quantity" name="quantity">
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">
+        {{ isEditMode ? 'Update' : 'Add' }} Product
+      </button>
+      <button mat-button routerLink="/products">Cancel</button>
+    </form>
+  </mat-card>
+</div>

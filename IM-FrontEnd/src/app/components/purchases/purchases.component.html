@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">Record {{ type }}</mat-toolbar>
+
+<div class="container mt-4">
+  <mat-card>
+    <form (ngSubmit)="submitForm()">
+      <mat-form-field appearance="fill" class="w-100 mb-3">
+        <mat-label>Select Product</mat-label>
+        <mat-select [(ngModel)]="model.productId" name="productId">
+          <mat-option *ngFor="let product of products" [value]="product.id">
+            {{ product.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="w-100 mb-3">
+        <mat-label>Quantity {{ type === 'Sale' ? 'Sold' : 'Purchased' }}</mat-label>
+        <input matInput type="number" [(ngModel)]="model.quantity" name="quantity">
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">
+        Record {{ type }}
+      </button>
+    </form>
+  </mat-card>
+</div>

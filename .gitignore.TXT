@@ -1,0 +1,97 @@
+# ============================
+# Build results and temp files
+# ============================
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.log
+*.tmp
+*.temp
+*.bak
+*.cache
+*.db
+*.pdb
+*.binlog
+*.suo
+*.user
+*.vspscc
+*.vssscc
+*.ncb
+*.sdf
+*.opensdf
+*.dbmdl
+~$*
+*~
+CodeCoverage/
+artifacts/
+
+# Debug/Release folders
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]*/
+bld/
+
+# Scaffolding
+ScaffoldingReadMe.txt
+
+# Test results
+[Tt]est[Rr]esult*/
+TestResult.xml
+nunit-*.xml
+*.VisualState.xml
+[Bb]uild[Ll]og.*
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# .NET Core Lock files
+project.lock.json
+project.fragment.lock.json
+
+# DotCover
+*.dotCover
+
+# Secrets
+secrets.json
+
+# ============================
+# IDE/Editor-specific files
+# ============================
+.vscode/
+.idea/
+.vs/
+*.sln.docstates
+
+# ============================
+# ASP.NET specific
+# ============================
+App_Data/
+App_Start/
+
+# ============================
+# Angular (IM-FrontEnd)
+# ============================
+IM-FrontEnd/node_modules/
+IM-FrontEnd/dist/
+IM-FrontEnd/.angular/
+IM-FrontEnd/.env
+IM-FrontEnd/.env.*
+IM-FrontEnd/.vscode/
+IM-FrontEnd/.idea/
+*.tsbuildinfo
+
+# ============================
+# OS-specific
+# ============================
+.DS_Store
+Thumbs.db
+
+# ============================
+# Git
+# ============================
+.gitignore
